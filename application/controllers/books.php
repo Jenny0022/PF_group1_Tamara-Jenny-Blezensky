@@ -12,21 +12,23 @@ class books extends CI_controller
     {
         $data['judul'] = 'books';
             $data['books']=$this->books_model->getAllBooks();
-        $this->form_validation->set_rules('Title','Title','required');
-        $this->form_validation->set_rules('Author','Author','required');
+        $this->form_validation->set_rules('title','title','required');
+        $this->form_validation->set_rules('author','author','required');
         if($this->form_validation->run()==false){
         $this->load->view('templates/header', $data);
         $this->load->view('books/index', $data);
         $this->load->view('templates/footer');    
-        }else {
-            $data=[
-                'Title' => $this->input->post('Title'),
-                'Author' => $this->input->post('Author'),
+    }else {
+        $data = [
+            'title' => $this->input->post('title'),
+            'author' => $this->input->post('author'),
 
-            ];
-            $this->db->insert('books',$data);
-            redirect('books');
-        }    
-    }
+        ];
+        $this->db->insert('books', $data);
+        redirect('books');
+
+    } 
+
+  }
 
 }

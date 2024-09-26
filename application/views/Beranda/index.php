@@ -9,22 +9,25 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
+    <style> 
+      .carousel-inner{margin-top: 80px;}
+    </style>
     <div class="carousel-item active">
-      <img src="application\assets\images\img 1.jpeg" class="d-block w-100" alt="..."style="width: 550px; height: 600px; object-fit: cover;">
+      <img src="application\assets\images\img 1.jpeg" class="d-block w-100" alt="..."style="width: 75px; height: 700px; object-fit: cover;">
       <div class="carousel-caption d-none d-md-block">
         <h5>NEXT</h5>
         <p>"Libraries are the treasure chests of civilization, filled with the power of ideas and dreams."</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="application\assets\images\img 2.jpeg" class="d-block w-100" alt="..."style="width: 550px; height: 600px; object-fit: cover;">
+      <img src="application\assets\images\img 2.jpeg" class="d-block w-100" alt="..."style="width: 100px; height: 700px; object-fit: cover;">
       <div class="carousel-caption d-none d-md-block">
         <h5>LIBRARY</h5>
         <p>"Books give a soul to the universe, wings to the mind, flight to the imagination, and life to everything."</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="application\assets\images\img 3.jpeg" class="d-block w-100" alt="..."style="width: 550px; height: 600px; object-fit: cover;">
+      <img src="application\assets\images\img 3.jpeg" class="d-block w-100" alt="..."style="width: 100px; height: 700px; object-fit: cover;">
       <div class="carousel-caption d-none d-md-block">
         <h5>ROOM</h5>
         <p>"The library is the temple of learning, and learning has liberated more people than all the wars in history."</p>
